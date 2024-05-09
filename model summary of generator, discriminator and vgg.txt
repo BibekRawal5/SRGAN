@@ -1,0 +1,415 @@
+Model: "model_3"
+__________________________________________________________________________________________________
+ Layer (type)                Output Shape                 Param #   Connected to                  
+==================================================================================================
+ input_16 (InputLayer)       [(None, 64, 64, 3)]          0         []                            
+                                                                                                  
+ conv2d_230 (Conv2D)         (None, 64, 64, 64)           15616     ['input_16[0][0]']            
+                                                                                                  
+ p_re_lu_108 (PReLU)         (None, 64, 64, 64)           64        ['conv2d_230[0][0]']          
+                                                                                                  
+ conv2d_231 (Conv2D)         (None, 64, 64, 64)           36928     ['p_re_lu_108[0][0]']         
+                                                                                                  
+ batch_normalization_214 (B  (None, 64, 64, 64)           256       ['conv2d_231[0][0]']          
+ atchNormalization)                                                                               
+                                                                                                  
+ p_re_lu_109 (PReLU)         (None, 64, 64, 64)           64        ['batch_normalization_214[0][0
+                                                                    ]']                           
+                                                                                                  
+ conv2d_232 (Conv2D)         (None, 64, 64, 64)           36928     ['p_re_lu_109[0][0]']         
+                                                                                                  
+ batch_normalization_215 (B  (None, 64, 64, 64)           256       ['conv2d_232[0][0]']          
+ atchNormalization)                                                                               
+                                                                                                  
+ add_100 (Add)               (None, 64, 64, 64)           0         ['p_re_lu_108[0][0]',         
+                                                                     'batch_normalization_215[0][0
+                                                                    ]']                           
+                                                                                                  
+ conv2d_233 (Conv2D)         (None, 64, 64, 64)           36928     ['add_100[0][0]']             
+                                                                                                  
+ batch_normalization_216 (B  (None, 64, 64, 64)           256       ['conv2d_233[0][0]']          
+ atchNormalization)                                                                               
+                                                                                                  
+ p_re_lu_110 (PReLU)         (None, 64, 64, 64)           64        ['batch_normalization_216[0][0
+                                                                    ]']                           
+                                                                                                  
+ conv2d_234 (Conv2D)         (None, 64, 64, 64)           36928     ['p_re_lu_110[0][0]']         
+                                                                                                  
+ batch_normalization_217 (B  (None, 64, 64, 64)           256       ['conv2d_234[0][0]']          
+ atchNormalization)                                                                               
+                                                                                                  
+ add_101 (Add)               (None, 64, 64, 64)           0         ['add_100[0][0]',             
+                                                                     'batch_normalization_217[0][0
+                                                                    ]']                           
+                                                                                                  
+ conv2d_235 (Conv2D)         (None, 64, 64, 64)           36928     ['add_101[0][0]']             
+                                                                                                  
+ batch_normalization_218 (B  (None, 64, 64, 64)           256       ['conv2d_235[0][0]']          
+ atchNormalization)                                                                               
+                                                                                                  
+ p_re_lu_111 (PReLU)         (None, 64, 64, 64)           64        ['batch_normalization_218[0][0
+                                                                    ]']                           
+                                                                                                  
+ conv2d_236 (Conv2D)         (None, 64, 64, 64)           36928     ['p_re_lu_111[0][0]']         
+                                                                                                  
+ batch_normalization_219 (B  (None, 64, 64, 64)           256       ['conv2d_236[0][0]']          
+ atchNormalization)                                                                               
+                                                                                                  
+ add_102 (Add)               (None, 64, 64, 64)           0         ['add_101[0][0]',             
+                                                                     'batch_normalization_219[0][0
+                                                                    ]']                           
+                                                                                                  
+ conv2d_237 (Conv2D)         (None, 64, 64, 64)           36928     ['add_102[0][0]']             
+                                                                                                  
+ batch_normalization_220 (B  (None, 64, 64, 64)           256       ['conv2d_237[0][0]']          
+ atchNormalization)                                                                               
+                                                                                                  
+ p_re_lu_112 (PReLU)         (None, 64, 64, 64)           64        ['batch_normalization_220[0][0
+                                                                    ]']                           
+                                                                                                  
+ conv2d_238 (Conv2D)         (None, 64, 64, 64)           36928     ['p_re_lu_112[0][0]']         
+                                                                                                  
+ batch_normalization_221 (B  (None, 64, 64, 64)           256       ['conv2d_238[0][0]']          
+ atchNormalization)                                                                               
+                                                                                                  
+ add_103 (Add)               (None, 64, 64, 64)           0         ['add_102[0][0]',             
+                                                                     'batch_normalization_221[0][0
+                                                                    ]']                           
+                                                                                                  
+ conv2d_239 (Conv2D)         (None, 64, 64, 64)           36928     ['add_103[0][0]']             
+                                                                                                  
+ batch_normalization_222 (B  (None, 64, 64, 64)           256       ['conv2d_239[0][0]']          
+ atchNormalization)                                                                               
+                                                                                                  
+ p_re_lu_113 (PReLU)         (None, 64, 64, 64)           64        ['batch_normalization_222[0][0
+                                                                    ]']                           
+                                                                                                  
+ conv2d_240 (Conv2D)         (None, 64, 64, 64)           36928     ['p_re_lu_113[0][0]']         
+                                                                                                  
+ batch_normalization_223 (B  (None, 64, 64, 64)           256       ['conv2d_240[0][0]']          
+ atchNormalization)                                                                               
+                                                                                                  
+ add_104 (Add)               (None, 64, 64, 64)           0         ['add_103[0][0]',             
+                                                                     'batch_normalization_223[0][0
+                                                                    ]']                           
+                                                                                                  
+ conv2d_241 (Conv2D)         (None, 64, 64, 64)           36928     ['add_104[0][0]']             
+                                                                                                  
+ batch_normalization_224 (B  (None, 64, 64, 64)           256       ['conv2d_241[0][0]']          
+ atchNormalization)                                                                               
+                                                                                                  
+ p_re_lu_114 (PReLU)         (None, 64, 64, 64)           64        ['batch_normalization_224[0][0
+                                                                    ]']                           
+                                                                                                  
+ conv2d_242 (Conv2D)         (None, 64, 64, 64)           36928     ['p_re_lu_114[0][0]']         
+                                                                                                  
+ batch_normalization_225 (B  (None, 64, 64, 64)           256       ['conv2d_242[0][0]']          
+ atchNormalization)                                                                               
+                                                                                                  
+ add_105 (Add)               (None, 64, 64, 64)           0         ['add_104[0][0]',             
+                                                                     'batch_normalization_225[0][0
+                                                                    ]']                           
+                                                                                                  
+ conv2d_243 (Conv2D)         (None, 64, 64, 64)           36928     ['add_105[0][0]']             
+                                                                                                  
+ batch_normalization_226 (B  (None, 64, 64, 64)           256       ['conv2d_243[0][0]']          
+ atchNormalization)                                                                               
+                                                                                                  
+ p_re_lu_115 (PReLU)         (None, 64, 64, 64)           64        ['batch_normalization_226[0][0
+                                                                    ]']                           
+                                                                                                  
+ conv2d_244 (Conv2D)         (None, 64, 64, 64)           36928     ['p_re_lu_115[0][0]']         
+                                                                                                  
+ batch_normalization_227 (B  (None, 64, 64, 64)           256       ['conv2d_244[0][0]']          
+ atchNormalization)                                                                               
+                                                                                                  
+ add_106 (Add)               (None, 64, 64, 64)           0         ['add_105[0][0]',             
+                                                                     'batch_normalization_227[0][0
+                                                                    ]']                           
+                                                                                                  
+ conv2d_245 (Conv2D)         (None, 64, 64, 64)           36928     ['add_106[0][0]']             
+                                                                                                  
+ batch_normalization_228 (B  (None, 64, 64, 64)           256       ['conv2d_245[0][0]']          
+ atchNormalization)                                                                               
+                                                                                                  
+ p_re_lu_116 (PReLU)         (None, 64, 64, 64)           64        ['batch_normalization_228[0][0
+                                                                    ]']                           
+                                                                                                  
+ conv2d_246 (Conv2D)         (None, 64, 64, 64)           36928     ['p_re_lu_116[0][0]']         
+                                                                                                  
+ batch_normalization_229 (B  (None, 64, 64, 64)           256       ['conv2d_246[0][0]']          
+ atchNormalization)                                                                               
+                                                                                                  
+ add_107 (Add)               (None, 64, 64, 64)           0         ['add_106[0][0]',             
+                                                                     'batch_normalization_229[0][0
+                                                                    ]']                           
+                                                                                                  
+ conv2d_247 (Conv2D)         (None, 64, 64, 64)           36928     ['add_107[0][0]']             
+                                                                                                  
+ batch_normalization_230 (B  (None, 64, 64, 64)           256       ['conv2d_247[0][0]']          
+ atchNormalization)                                                                               
+                                                                                                  
+ p_re_lu_117 (PReLU)         (None, 64, 64, 64)           64        ['batch_normalization_230[0][0
+                                                                    ]']                           
+                                                                                                  
+ conv2d_248 (Conv2D)         (None, 64, 64, 64)           36928     ['p_re_lu_117[0][0]']         
+                                                                                                  
+ batch_normalization_231 (B  (None, 64, 64, 64)           256       ['conv2d_248[0][0]']          
+ atchNormalization)                                                                               
+                                                                                                  
+ add_108 (Add)               (None, 64, 64, 64)           0         ['add_107[0][0]',             
+                                                                     'batch_normalization_231[0][0
+                                                                    ]']                           
+                                                                                                  
+ conv2d_249 (Conv2D)         (None, 64, 64, 64)           36928     ['add_108[0][0]']             
+                                                                                                  
+ batch_normalization_232 (B  (None, 64, 64, 64)           256       ['conv2d_249[0][0]']          
+ atchNormalization)                                                                               
+                                                                                                  
+ p_re_lu_118 (PReLU)         (None, 64, 64, 64)           64        ['batch_normalization_232[0][0
+                                                                    ]']                           
+                                                                                                  
+ conv2d_250 (Conv2D)         (None, 64, 64, 64)           36928     ['p_re_lu_118[0][0]']         
+                                                                                                  
+ batch_normalization_233 (B  (None, 64, 64, 64)           256       ['conv2d_250[0][0]']          
+ atchNormalization)                                                                               
+                                                                                                  
+ add_109 (Add)               (None, 64, 64, 64)           0         ['add_108[0][0]',             
+                                                                     'batch_normalization_233[0][0
+                                                                    ]']                           
+                                                                                                  
+ conv2d_251 (Conv2D)         (None, 64, 64, 64)           36928     ['add_109[0][0]']             
+                                                                                                  
+ batch_normalization_234 (B  (None, 64, 64, 64)           256       ['conv2d_251[0][0]']          
+ atchNormalization)                                                                               
+                                                                                                  
+ p_re_lu_119 (PReLU)         (None, 64, 64, 64)           64        ['batch_normalization_234[0][0
+                                                                    ]']                           
+                                                                                                  
+ conv2d_252 (Conv2D)         (None, 64, 64, 64)           36928     ['p_re_lu_119[0][0]']         
+                                                                                                  
+ batch_normalization_235 (B  (None, 64, 64, 64)           256       ['conv2d_252[0][0]']          
+ atchNormalization)                                                                               
+                                                                                                  
+ add_110 (Add)               (None, 64, 64, 64)           0         ['add_109[0][0]',             
+                                                                     'batch_normalization_235[0][0
+                                                                    ]']                           
+                                                                                                  
+ conv2d_253 (Conv2D)         (None, 64, 64, 64)           36928     ['add_110[0][0]']             
+                                                                                                  
+ batch_normalization_236 (B  (None, 64, 64, 64)           256       ['conv2d_253[0][0]']          
+ atchNormalization)                                                                               
+                                                                                                  
+ p_re_lu_120 (PReLU)         (None, 64, 64, 64)           64        ['batch_normalization_236[0][0
+                                                                    ]']                           
+                                                                                                  
+ conv2d_254 (Conv2D)         (None, 64, 64, 64)           36928     ['p_re_lu_120[0][0]']         
+                                                                                                  
+ batch_normalization_237 (B  (None, 64, 64, 64)           256       ['conv2d_254[0][0]']          
+ atchNormalization)                                                                               
+                                                                                                  
+ add_111 (Add)               (None, 64, 64, 64)           0         ['add_110[0][0]',             
+                                                                     'batch_normalization_237[0][0
+                                                                    ]']                           
+                                                                                                  
+ conv2d_255 (Conv2D)         (None, 64, 64, 64)           36928     ['add_111[0][0]']             
+                                                                                                  
+ batch_normalization_238 (B  (None, 64, 64, 64)           256       ['conv2d_255[0][0]']          
+ atchNormalization)                                                                               
+                                                                                                  
+ p_re_lu_121 (PReLU)         (None, 64, 64, 64)           64        ['batch_normalization_238[0][0
+                                                                    ]']                           
+                                                                                                  
+ conv2d_256 (Conv2D)         (None, 64, 64, 64)           36928     ['p_re_lu_121[0][0]']         
+                                                                                                  
+ batch_normalization_239 (B  (None, 64, 64, 64)           256       ['conv2d_256[0][0]']          
+ atchNormalization)                                                                               
+                                                                                                  
+ add_112 (Add)               (None, 64, 64, 64)           0         ['add_111[0][0]',             
+                                                                     'batch_normalization_239[0][0
+                                                                    ]']                           
+                                                                                                  
+ conv2d_257 (Conv2D)         (None, 64, 64, 64)           36928     ['add_112[0][0]']             
+                                                                                                  
+ batch_normalization_240 (B  (None, 64, 64, 64)           256       ['conv2d_257[0][0]']          
+ atchNormalization)                                                                               
+                                                                                                  
+ p_re_lu_122 (PReLU)         (None, 64, 64, 64)           64        ['batch_normalization_240[0][0
+                                                                    ]']                           
+                                                                                                  
+ conv2d_258 (Conv2D)         (None, 64, 64, 64)           36928     ['p_re_lu_122[0][0]']         
+                                                                                                  
+ batch_normalization_241 (B  (None, 64, 64, 64)           256       ['conv2d_258[0][0]']          
+ atchNormalization)                                                                               
+                                                                                                  
+ add_113 (Add)               (None, 64, 64, 64)           0         ['add_112[0][0]',             
+                                                                     'batch_normalization_241[0][0
+                                                                    ]']                           
+                                                                                                  
+ conv2d_259 (Conv2D)         (None, 64, 64, 64)           36928     ['add_113[0][0]']             
+                                                                                                  
+ batch_normalization_242 (B  (None, 64, 64, 64)           256       ['conv2d_259[0][0]']          
+ atchNormalization)                                                                               
+                                                                                                  
+ p_re_lu_123 (PReLU)         (None, 64, 64, 64)           64        ['batch_normalization_242[0][0
+                                                                    ]']                           
+                                                                                                  
+ conv2d_260 (Conv2D)         (None, 64, 64, 64)           36928     ['p_re_lu_123[0][0]']         
+                                                                                                  
+ batch_normalization_243 (B  (None, 64, 64, 64)           256       ['conv2d_260[0][0]']          
+ atchNormalization)                                                                               
+                                                                                                  
+ add_114 (Add)               (None, 64, 64, 64)           0         ['add_113[0][0]',             
+                                                                     'batch_normalization_243[0][0
+                                                                    ]']                           
+                                                                                                  
+ conv2d_261 (Conv2D)         (None, 64, 64, 64)           36928     ['add_114[0][0]']             
+                                                                                                  
+ batch_normalization_244 (B  (None, 64, 64, 64)           256       ['conv2d_261[0][0]']          
+ atchNormalization)                                                                               
+                                                                                                  
+ p_re_lu_124 (PReLU)         (None, 64, 64, 64)           64        ['batch_normalization_244[0][0
+                                                                    ]']                           
+                                                                                                  
+ conv2d_262 (Conv2D)         (None, 64, 64, 64)           36928     ['p_re_lu_124[0][0]']         
+                                                                                                  
+ batch_normalization_245 (B  (None, 64, 64, 64)           256       ['conv2d_262[0][0]']          
+ atchNormalization)                                                                               
+                                                                                                  
+ add_115 (Add)               (None, 64, 64, 64)           0         ['add_114[0][0]',             
+                                                                     'batch_normalization_245[0][0
+                                                                    ]']                           
+                                                                                                  
+ conv2d_263 (Conv2D)         (None, 64, 64, 64)           36928     ['add_115[0][0]']             
+                                                                                                  
+ batch_normalization_246 (B  (None, 64, 64, 64)           256       ['conv2d_263[0][0]']          
+ atchNormalization)                                                                               
+                                                                                                  
+ add_116 (Add)               (None, 64, 64, 64)           0         ['batch_normalization_246[0][0
+                                                                    ]',                           
+                                                                     'p_re_lu_108[0][0]']         
+                                                                                                  
+ conv2d_264 (Conv2D)         (None, 64, 64, 256)          147712    ['add_116[0][0]']             
+                                                                                                  
+ up_sampling2d_4 (UpSamplin  (None, 128, 128, 256)        0         ['conv2d_264[0][0]']          
+ g2D)                                                                                             
+                                                                                                  
+ p_re_lu_125 (PReLU)         (None, 128, 128, 256)        256       ['up_sampling2d_4[0][0]']     
+                                                                                                  
+ conv2d_265 (Conv2D)         (None, 128, 128, 256)        590080    ['p_re_lu_125[0][0]']         
+                                                                                                  
+ up_sampling2d_5 (UpSamplin  (None, 256, 256, 256)        0         ['conv2d_265[0][0]']          
+ g2D)                                                                                             
+                                                                                                  
+ p_re_lu_126 (PReLU)         (None, 256, 256, 256)        256       ['up_sampling2d_5[0][0]']     
+                                                                                                  
+ conv2d_266 (Conv2D)         (None, 256, 256, 3)          62211     ['p_re_lu_126[0][0]']         
+                                                                                                  
+==================================================================================================
+Total params: 2044291 (7.80 MB)
+Trainable params: 2040067 (7.78 MB)
+Non-trainable params: 4224 (16.50 KB)
+__________________________________________________________________________________________________
+Model: "model_4"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_17 (InputLayer)       [(None, 256, 256, 3)]     0         
+                                                                 
+ conv2d_267 (Conv2D)         (None, 256, 256, 64)      1792      
+                                                                 
+ leaky_re_lu_17 (LeakyReLU)  (None, 256, 256, 64)      0         
+                                                                 
+ conv2d_268 (Conv2D)         (None, 128, 128, 64)      36928     
+                                                                 
+ batch_normalization_247 (B  (None, 128, 128, 64)      256       
+ atchNormalization)                                              
+                                                                 
+ leaky_re_lu_18 (LeakyReLU)  (None, 128, 128, 64)      0         
+                                                                 
+ conv2d_269 (Conv2D)         (None, 128, 128, 128)     73856     
+                                                                 
+ batch_normalization_248 (B  (None, 128, 128, 128)     512       
+ atchNormalization)                                              
+                                                                 
+ leaky_re_lu_19 (LeakyReLU)  (None, 128, 128, 128)     0         
+                                                                 
+ conv2d_270 (Conv2D)         (None, 64, 64, 128)       147584    
+                                                                 
+ batch_normalization_249 (B  (None, 64, 64, 128)       512       
+ atchNormalization)                                              
+                                                                 
+ leaky_re_lu_20 (LeakyReLU)  (None, 64, 64, 128)       0         
+                                                                 
+ conv2d_271 (Conv2D)         (None, 64, 64, 256)       295168    
+                                                                 
+ batch_normalization_250 (B  (None, 64, 64, 256)       1024      
+ atchNormalization)                                              
+                                                                 
+ leaky_re_lu_21 (LeakyReLU)  (None, 64, 64, 256)       0         
+                                                                 
+ conv2d_272 (Conv2D)         (None, 32, 32, 256)       590080    
+                                                                 
+ batch_normalization_251 (B  (None, 32, 32, 256)       1024      
+ atchNormalization)                                              
+                                                                 
+ leaky_re_lu_22 (LeakyReLU)  (None, 32, 32, 256)       0         
+                                                                 
+ conv2d_273 (Conv2D)         (None, 32, 32, 512)       1180160   
+                                                                 
+ batch_normalization_252 (B  (None, 32, 32, 512)       2048      
+ atchNormalization)                                              
+                                                                 
+ leaky_re_lu_23 (LeakyReLU)  (None, 32, 32, 512)       0         
+                                                                 
+ conv2d_274 (Conv2D)         (None, 16, 16, 512)       2359808   
+                                                                 
+ batch_normalization_253 (B  (None, 16, 16, 512)       2048      
+ atchNormalization)                                              
+                                                                 
+ leaky_re_lu_24 (LeakyReLU)  (None, 16, 16, 512)       0         
+                                                                 
+ flatten_1 (Flatten)         (None, 131072)            0         
+                                                                 
+ dense_2 (Dense)             (None, 1024)              134218752 
+                                                                 
+ leaky_re_lu_25 (LeakyReLU)  (None, 1024)              0         
+                                                                 
+ dense_3 (Dense)             (None, 1)                 1025      
+                                                                 
+=================================================================
+Total params: 138912577 (529.91 MB)
+Trainable params: 138908865 (529.90 MB)
+Non-trainable params: 3712 (14.50 KB)
+_________________________________________________________________
+Model: "model_5"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_18 (InputLayer)       [(None, 128, 128, 3)]     0         
+                                                                 
+ block1_conv1 (Conv2D)       (None, 128, 128, 64)      1792      
+                                                                 
+ block1_conv2 (Conv2D)       (None, 128, 128, 64)      36928     
+                                                                 
+ block1_pool (MaxPooling2D)  (None, 64, 64, 64)        0         
+                                                                 
+ block2_conv1 (Conv2D)       (None, 64, 64, 128)       73856     
+                                                                 
+ block2_conv2 (Conv2D)       (None, 64, 64, 128)       147584    
+                                                                 
+ block2_pool (MaxPooling2D)  (None, 32, 32, 128)       0         
+                                                                 
+ block3_conv1 (Conv2D)       (None, 32, 32, 256)       295168    
+                                                                 
+ block3_conv2 (Conv2D)       (None, 32, 32, 256)       590080    
+                                                                 
+ block3_conv3 (Conv2D)       (None, 32, 32, 256)       590080    
+                                                                 
+ block3_conv4 (Conv2D)       (None, 32, 32, 256)       590080    
+                                                                 
+=================================================================
+Total params: 2325568 (8.87 MB)
+Trainable params: 2325568 (8.87 MB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________
